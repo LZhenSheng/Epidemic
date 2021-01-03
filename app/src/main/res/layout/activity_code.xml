@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CodeActivity"
+    android:background="@color/transparent_88_black"
+    android:fitsSystemWindows="true">
+    <!--android:fitsSystemWindows="true":里面的内容布局偏移状态栏高度-->
+
+    <!--标题控件-->
+    <include layout="@layout/tool_bar" />
+
+    <!--内容容器-->
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--二维码容器-->
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_white"
+            android:padding="@dimen/padding_large"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--用户信息容器-->
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--头像-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:src="@drawable/placeholder"
+                    android:layout_width="@dimen/avatar_width_meddle3"
+                    android:layout_height="@dimen/avatar_width_meddle3" />
+
+                <!--昵称-->
+                <TextView
+                    android:layout_marginLeft="@dimen/padding_meddle"
+                    android:id="@+id/tv_nickname"
+                    android:text="这是昵称"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--二维码-->
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_marginTop="@dimen/padding_meddle"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <!--提示-->
+            <TextView
+                android:id="@+id/save"
+                android:gravity="center_horizontal"
+                android:textColor="@color/light_grey"
+                android:layout_marginTop="@dimen/padding_large"
+                android:text="@string/hint_scan_my_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
