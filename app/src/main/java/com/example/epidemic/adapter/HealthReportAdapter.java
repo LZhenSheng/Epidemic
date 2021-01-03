@@ -6,6 +6,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.epidemic.R;
 import com.example.epidemic.liteorm.HealthReport;
+import com.example.epidemic.util.TimeUtil;
 
 /**
  *
@@ -29,8 +30,8 @@ public class HealthReportAdapter extends BaseQuickAdapter<HealthReport, BaseView
      */
     @Override
     protected void convert(@NonNull BaseViewHolder helper, HealthReport data) {
-        helper.setText(R.id.time, data.getDate());
-        helper.setText(R.id.temperature, data.getTemperature());
+        helper.setText(R.id.time, TimeUtil.commonFormat(data.getDate()));
+        helper.setText(R.id.temperature, data.getTemperature()+"℃");
         helper.setText(R.id.status,"健康");
     }
 

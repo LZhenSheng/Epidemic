@@ -158,7 +158,7 @@ public class PreferenceUtil {
      * @return
      */
     public static String getObjectId() {
-        return getString(SHOW_GUIDE);
+        return getString(OBJECTID);
     }
 
     /**
@@ -166,7 +166,7 @@ public class PreferenceUtil {
      * @param value
      */
     public static void setObjectId(String value) {
-        putString(SESSION, value);
+        putString(OBJECTID, value);
     }
 
 }

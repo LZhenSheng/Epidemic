@@ -13,9 +13,12 @@ import com.example.epidemic.R;
 import com.example.epidemic.activity.base.BaseTitleActivity;
 import com.example.epidemic.adapter.HealthReportAdapter;
 import com.example.epidemic.liteorm.HealthReport;
+import com.example.epidemic.util.DateUtil;
 import com.example.epidemic.util.LiteORMUtil;
 import com.example.epidemic.util.PreferenceUtil;
 import com.example.epidemic.util.ToastUtil;
+
+import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -32,14 +35,6 @@ public class AddHealthReport extends BaseTitleActivity {
      * 数据库框架
      */
     private LiteORMUtil orm;
-
-    /***
-     * 适配器
-     */
-    HealthReportAdapter adapter;
-
-    @BindView(R.id.rv)
-    RecyclerView rv;
 
     @BindView(R.id.radiobutton11)
     RadioButton radioButton11;
@@ -84,6 +79,7 @@ public class AddHealthReport extends BaseTitleActivity {
     public void onClick(){
         HealthReport healthReport=new HealthReport();
         healthReport.setObjectId(PreferenceUtil.getObjectId());
+        healthReport.setTemperature(temperature.getText().toString().trim());
         if(radioButton11.isChecked())
             healthReport.setOption1("1");
         else
@@ -91,7 +87,7 @@ public class AddHealthReport extends BaseTitleActivity {
         if(radioButton21.isChecked())
             healthReport.setOption2("1");
         else
-            healthReport.setOption3("2");
+            healthReport.setOption2("2");
         if(radioButton31.isChecked())
             healthReport.setOption3("1");
         else
@@ -108,6 +104,7 @@ public class AddHealthReport extends BaseTitleActivity {
             healthReport.setOption6("1");
         else
             healthReport.setOption6("2");
+        healthReport.setDate(DateUtil.getDate());
         orm.createHealthReport(healthReport);
         finish();
         ToastUtil.successShortToast("提交成功");
@@ -123,24 +120,6 @@ public class AddHealthReport extends BaseTitleActivity {
     protected void initViews() {
         super.initViews();
         orm = LiteORMUtil.getInstance(getApplicationContext());
-        //尺寸固定
-        rv.setHasFixedSize(true);
-
-        //设置布局管理器
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getMainActivity());
-        rv.setLayoutManager(layoutManager);
-        rv.setNestedScrollingEnabled(false);
-        //创建分割线
-        DividerItemDecoration decoration=new DividerItemDecoration(getMainActivity(),RecyclerView.VERTICAL);
-        //添加到控件
-        //可以添加多个
-        rv.addItemDecoration(decoration);
-
-        //禁用嵌套滚动
-        rv.setNestedScrollingEnabled(false);
-
-        rv.setAdapter(adapter);
-
     }
 
     @Override

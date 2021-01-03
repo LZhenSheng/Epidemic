@@ -94,4 +94,14 @@ public class LiteORMUtil {
         }
         return null;
     }
+
+    /**
+     * 查询所有账号
+     *
+     * @return
+     */
+    public List<HealthReport> queryHealthReport() {
+        QueryBuilder<HealthReport> queryBuilder = new QueryBuilder<>(HealthReport.class);
+        return orm.query(queryBuilder);
+    }
 }
