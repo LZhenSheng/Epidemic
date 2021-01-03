@@ -1,8 +1,5 @@
 package com.example.epidemic.activity;
 
-import android.Manifest;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,17 +8,19 @@ import android.widget.TextView;
 
 import com.example.epidemic.R;
 import com.example.epidemic.activity.base.BaseTimeActivity;
+import com.example.epidemic.liteorm.Account;
+import com.example.epidemic.util.LiteORMUtil;
+import com.example.epidemic.util.PreferenceUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import permissions.dispatcher.NeedsPermission;
-import permissions.dispatcher.OnNeverAskAgain;
-import permissions.dispatcher.OnPermissionDenied;
-import permissions.dispatcher.OnShowRationale;
-import permissions.dispatcher.PermissionRequest;
-import permissions.dispatcher.RuntimePermissions;
 
 public class LoginStudengActivity extends BaseTimeActivity {
+
+    /**
+     * 数据库框架
+     */
+    private LiteORMUtil orm;
 
     /***
      * ButterKnife绑定
@@ -55,7 +54,11 @@ public class LoginStudengActivity extends BaseTimeActivity {
                 startActivity(ForgetPasswordActivity.class);
                 break;
             case R.id.l_login:
-                startActivityAfterFinishThis(MainActivity.class);
+                Account account=orm.queryAccountByIphonePassword(lAccount.getText().toString().trim(),lPassword.getText().toString().trim());
+                if(account!=null){
+                    PreferenceUtil.setSession(true);
+                    startActivityAfterFinishThis(MainActivity.class);
+                }
                 break;
             case R.id.iv_replace:
                 startActivityAfterFinishThis(LoginTeacherActivity.class);
@@ -80,9 +83,8 @@ public class LoginStudengActivity extends BaseTimeActivity {
     @Override
     protected void initViews() {
         super.initViews();
-
+        orm = LiteORMUtil.getInstance(getApplicationContext());
     }
-
 
 
 }

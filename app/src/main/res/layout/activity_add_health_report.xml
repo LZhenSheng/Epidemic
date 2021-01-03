@@ -115,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:text="14日内家庭成员是否有被确诊" />
+                        android:text="14日内家庭成员是否有被诊断为新冠肺炎、疑似患者或被确认为密切接触者" />
 
                     <RadioGroup
                         android:id="@+id/radiogroup3"
@@ -136,6 +136,100 @@
                             android:text="否" />
 
                     </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="14天内是否与确认的新冠肺炎患者、疑似患者或者被确认为密切接触者有接触史" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radiobutton41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="否" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="14天内是否接触有发烧或呼吸道疾病的患者" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radiobutton51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton52"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="否" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="14天内是否服用退烧药、感冒药" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/radiobutton61"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton62"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="否" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="提交"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:background="@color/main_color"/>
 
                 </LinearLayout>
 

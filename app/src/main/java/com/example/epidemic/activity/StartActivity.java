@@ -147,7 +147,7 @@ public class StartActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(LoginStudengActivity.class);
+                startActivityAfterFinishThis(LoginStudengActivity.class);
             }
         }, 1000);
     }
