@@ -3,6 +3,7 @@ package com.example.epidemic.util;
 import android.content.Context;
 
 import com.example.epidemic.liteorm.Account;
+import com.example.epidemic.liteorm.HealthReport;
 import com.litesuits.orm.LiteOrm;
 import com.litesuits.orm.db.assit.QueryBuilder;
 
@@ -68,6 +69,14 @@ public class LiteORMUtil {
         account1.setAccount(account);
         account1.setPassword(password);
         orm.save(account1);
+    }
+
+    /**
+     * 创建健康上报表
+     *
+     */
+    public void createHealthReport(HealthReport data) {
+        orm.save(data);
     }
 
     /**

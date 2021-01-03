@@ -54,11 +54,13 @@ public class LoginStudengActivity extends BaseTimeActivity {
                 startActivity(ForgetPasswordActivity.class);
                 break;
             case R.id.l_login:
-                Account account=orm.queryAccountByIphonePassword(lAccount.getText().toString().trim(),lPassword.getText().toString().trim());
-                if(account!=null){
-                    PreferenceUtil.setSession(true);
+                PreferenceUtil.setObjectId("18237056873");
+//                Account account=orm.queryAccountByIphonePassword(lAccount.getText().toString().trim(),lPassword.getText().toString().trim());
+//                if(account!=null){
+//                    PreferenceUtil.setSession(true);
+//                    PreferenceUtil.setObjectId(lAccount.getText().toString());
                     startActivityAfterFinishThis(MainActivity.class);
-                }
+//                }
                 break;
             case R.id.iv_replace:
                 startActivityAfterFinishThis(LoginTeacherActivity.class);
@@ -78,6 +80,9 @@ public class LoginStudengActivity extends BaseTimeActivity {
     public void initData() {
         super.initData();
         lightStatusBar(R.color.location_login);
+        if(PreferenceUtil.getSession()){
+            startActivityAfterFinishThis(MainActivity.class);
+        }
     }
 
     @Override

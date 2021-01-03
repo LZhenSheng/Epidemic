@@ -24,6 +24,11 @@ public class PreferenceUtil {
     /**
      * 偏好设置文件名称
      */
+    private static final String OBJECTID = "SESSION";
+
+    /**
+     * 偏好设置文件名称
+     */
     private static final String NAME = "CHARITABLE";
 
     /**
@@ -146,6 +151,22 @@ public class PreferenceUtil {
      */
     public static void setSession(boolean value) {
         putBoolean(SESSION, value);
+    }
+
+    /**
+     * 是否显示引导界面
+     * @return
+     */
+    public static String getObjectId() {
+        return getString(SHOW_GUIDE);
+    }
+
+    /**
+     * 设置是否显示引导界面
+     * @param value
+     */
+    public static void setObjectId(String value) {
+        putString(SESSION, value);
     }
 
 }

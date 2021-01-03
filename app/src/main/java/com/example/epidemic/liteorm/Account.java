@@ -11,7 +11,7 @@ import com.litesuits.orm.db.enums.AssignType;
 * @time 2021/1/3
 * @dec
 */
-@Table("account")
+@Table("Account")
 public class Account {
 
     /**

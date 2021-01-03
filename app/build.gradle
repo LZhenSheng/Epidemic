@@ -79,4 +79,8 @@ dependencies {
     //带阴影的CardView框架
     //https://github.com/zzyyppqq/CardViewShadowColor
     implementation 'com.zyp.cardview:cardview:1.0.1'
+
+    //封装了RecyclerView
+    //提供更高层次的接口
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 }

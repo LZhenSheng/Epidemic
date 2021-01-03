@@ -47,11 +47,12 @@
                             android:textSize="23sp" />
 
                         <EditText
+                            android:id="@+id/tempory"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@null"
                             android:gravity="right|top"
-                            android:hint="请输入温度"
+                            android:hint="0.0"
                             android:textSize="23sp" />
 
                     </LinearLayout>
@@ -79,6 +80,7 @@
                             android:id="@+id/radiobutton12"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:checked="true"
                             android:text="否" />
 
                     </RadioGroup>
@@ -106,6 +108,7 @@
                             android:id="@+id/radiobutton22"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:checked="true"
                             android:text="否" />
 
                     </RadioGroup>
@@ -132,6 +135,7 @@
                         <RadioButton
                             android:id="@+id/radiobutton32"
                             android:layout_width="match_parent"
+                            android:checked="true"
                             android:layout_height="wrap_content"
                             android:text="否" />
 
@@ -158,6 +162,7 @@
 
                         <RadioButton
                             android:id="@+id/radiobutton42"
+                            android:checked="true"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="否" />
@@ -186,6 +191,7 @@
                         <RadioButton
                             android:id="@+id/radiobutton52"
                             android:layout_width="match_parent"
+                            android:checked="true"
                             android:layout_height="wrap_content"
                             android:text="否" />
 
@@ -212,6 +218,7 @@
 
                         <RadioButton
                             android:id="@+id/radiobutton62"
+                            android:checked="true"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="否" />
@@ -219,6 +226,7 @@
                     </RadioGroup>
 
                     <Button
+                        android:id="@+id/commit"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
