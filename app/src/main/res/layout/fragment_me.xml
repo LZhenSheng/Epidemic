@@ -9,7 +9,7 @@
     <!--Toolbar-->
     <include layout="@layout/tool_bar" />
 
-    <!--内容部分layout_behavior:用来控制内容区域-->
+    <!--:用内容部分layout_behavior来控制内容区域-->
     <LinearLayout style="@style/ToolbarContent">
 
         <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
@@ -47,13 +47,16 @@
                             android:textSize="20sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="姓名:"/>
+                            android:text="姓名:未设置"/>
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/generate_codeing"
-                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/user_message"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp">
 
@@ -61,11 +64,83 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
-                            android:text="检查更新"
+                            android:text="个人信息修改"
                             android:textSize="20sp" />
 
                         <View style="@style/MyView" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/toward_right" />
+
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/health_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:text="健康上报记录"
+                            android:textSize="20sp" />
+
+                        <View style="@style/MyView" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/toward_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/apply_pass_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:text="通行证申请"
+                            android:textSize="20sp" />
+
+                        <View style="@style/MyView" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/toward_right" />
+
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/generate_codeing"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="5dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:text="检查更新"-->
+<!--                            android:textSize="20sp" />-->
+
+<!--                        <View style="@style/MyView" />-->
+<!--                    </LinearLayout>-->
 
                     <Button
                         android:id="@+id/exit"

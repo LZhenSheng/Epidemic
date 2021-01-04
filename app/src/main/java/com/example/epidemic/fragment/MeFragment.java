@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 
 import com.example.epidemic.R;
 import com.example.epidemic.activity.CodeActivity;
+import com.example.epidemic.activity.LoginStudengActivity;
+import com.example.epidemic.activity.UserMessageActivity;
+import com.example.epidemic.util.PreferenceUtil;
 
 import butterknife.OnClick;
 
@@ -56,4 +59,16 @@ public class MeFragment extends BaseTitleFragment {
         setTitleCenter(toolbar);
     }
 
+    @OnClick({R.id.exit,R.id.user_message})
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.exit:
+                PreferenceUtil.setSession(false);
+                startActivityAfterFinishThis(LoginStudengActivity.class);
+                 break;
+            case R.id.user_message:
+                startActivity(UserMessageActivity.class);
+                break;
+        }
+    }
 }
