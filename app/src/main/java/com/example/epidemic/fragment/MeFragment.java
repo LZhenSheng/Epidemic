@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 
 import com.example.epidemic.R;
 import com.example.epidemic.activity.CodeActivity;
+import com.example.epidemic.activity.HealthReportHistoryActivity;
 import com.example.epidemic.activity.LoginStudengActivity;
 import com.example.epidemic.activity.UserMessageActivity;
 import com.example.epidemic.util.PreferenceUtil;
@@ -43,14 +44,14 @@ public class MeFragment extends BaseTitleFragment {
     }
 
 
-    @OnClick({ R.id.generate_codeing})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.generate_codeing:
-                startActivity(new Intent(getActivity(), CodeActivity.class));
-                break;
-        }
-    }
+//    @OnClick({ R.id.generate_codeing})
+//    public void onViewClicked(View view) {
+//        switch (view.getId()) {
+//            case R.id.generate_codeing:
+//                startActivity(new Intent(getActivity(), CodeActivity.class));
+//                break;
+//        }
+//    }
 
     @Override
     protected void initData() {
@@ -59,7 +60,7 @@ public class MeFragment extends BaseTitleFragment {
         setTitleCenter(toolbar);
     }
 
-    @OnClick({R.id.exit,R.id.user_message})
+    @OnClick({R.id.exit,R.id.user_message,R.id.health_report})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -68,6 +69,9 @@ public class MeFragment extends BaseTitleFragment {
                  break;
             case R.id.user_message:
                 startActivity(UserMessageActivity.class);
+                break;
+            case R.id.health_report:
+                startActivity(HealthReportHistoryActivity.class);
                 break;
         }
     }
