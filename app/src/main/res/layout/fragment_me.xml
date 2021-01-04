@@ -31,23 +31,23 @@
                         android:layout_height="wrap_content">
 
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:background="@color/main_color"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:layout_width="100dp"
+                            android:id="@+id/avator"
                             android:layout_height="100dp"/>
 
                         <TextView
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="学号:未绑定"/>
+                            android:text="学号:1800300119"/>
 
                         <TextView
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="姓名:未设置"/>
+                            android:text="姓名:李振生"/>
 
                     </LinearLayout>
 
@@ -80,7 +80,7 @@
                         android:gravity="center_vertical"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:id="@+id/health_report"
+                        android:id="@+id/apply_pass_check"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp">
@@ -89,7 +89,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
-                            android:text="健康上报记录"
+                            android:text="通行证申请"
                             android:textSize="20sp" />
 
                         <View style="@style/MyView" />
@@ -105,7 +105,7 @@
                         android:gravity="center_vertical"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
-                        android:id="@+id/apply_pass_check"
+                        android:id="@+id/health_report"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp">
@@ -114,7 +114,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
-                            android:text="通行证申请"
+                            android:text="健康上报记录"
                             android:textSize="20sp" />
 
                         <View style="@style/MyView" />

@@ -5,20 +5,27 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
 import com.example.epidemic.R;
+import com.example.epidemic.activity.ApplyForPassActivity;
 import com.example.epidemic.activity.CodeActivity;
 import com.example.epidemic.activity.HealthReportHistoryActivity;
 import com.example.epidemic.activity.LoginStudengActivity;
 import com.example.epidemic.activity.UserMessageActivity;
 import com.example.epidemic.util.PreferenceUtil;
 
+import butterknife.BindView;
 import butterknife.OnClick;
 
 public class MeFragment extends BaseTitleFragment {
 
+
+    @BindView(R.id.avator)
+    ImageView avatar;
 
     /**
      * 构造方法
@@ -53,6 +60,13 @@ public class MeFragment extends BaseTitleFragment {
 //        }
 //    }
 
+
+    @Override
+    protected void initViews() {
+        super.initViews();
+        Glide.with(getMainActivity()).load("http://bmob-cdn-28709.bmobpay.com/2020/09/27/eebf2bf6d3aa4e29aafb5f521b33423a.jpg").into(avatar);
+    }
+
     @Override
     protected void initData() {
         super.initData();
@@ -60,7 +74,7 @@ public class MeFragment extends BaseTitleFragment {
         setTitleCenter(toolbar);
     }
 
-    @OnClick({R.id.exit,R.id.user_message,R.id.health_report})
+    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -72,6 +86,9 @@ public class MeFragment extends BaseTitleFragment {
                 break;
             case R.id.health_report:
                 startActivity(HealthReportHistoryActivity.class);
+                break;
+            case R.id.apply_pass_check:
+                startActivity(ApplyForPassActivity.class);
                 break;
         }
     }

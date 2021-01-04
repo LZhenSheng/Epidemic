@@ -112,7 +112,6 @@ public class HealthFrgament extends BaseTitleFragment {
 
     private void fetchData() {
         List<HealthReport> list=orm.queryHealthReport();
-        ToastUtil.successShortToast(list.size()+"");
         List<HealthReport> result=new ArrayList<>();
         for(int i=list.size()-1;i>=0;i--){
             result.add(list.get(i));

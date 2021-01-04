@@ -86,4 +86,8 @@ dependencies {
 
     //更方便的日期时间，运算，解析格式化框架
     implementation 'joda-time:joda-time:2.10.5'
+
+    /*Glide*/
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 }
