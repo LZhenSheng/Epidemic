@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/tool_bar" />
+
+    <!--:用内容部分layout_behavior来控制内容区域-->
+    <LinearLayout style="@style/ToolbarContent">
+
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名"/>
+
+                        <View
+                           style="@style/MyView"/>
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:textSize="20sp"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="学号"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <EditText
+                            android:id="@+id/student_num"
+                            android:textSize="20sp"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/start_date"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开始时间"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:id="@+id/start_date_display"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/end_date"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="截止时间"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:id="@+id/end_date_display"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="通行次数"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <EditText
+                            android:textSize="20sp"
+                            android:text="无限"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="原因"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <EditText
+                            android:id="@+id/reason"
+                            android:textSize="20sp"
+                            android:gravity="right|top"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/commit"
+                        android:text="申请"
+                        style="@style/Button"
+                        android:textSize="20sp"
+                        android:background="@drawable/selector_color_primary"
+                        android:textColor="@drawable/selector_text_color_primary_reverse"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

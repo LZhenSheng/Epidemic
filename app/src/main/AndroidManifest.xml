@@ -28,8 +28,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.ApplyForPassActivity"
-            android:label="通行证"></activity>
+        <activity android:name=".activity.AddApplyForPassActivity"
+            android:label="申请通行证"></activity>
+        <activity
+            android:name=".activity.ApplyForPassActivity"
+            android:label="通行证" />
         <activity
             android:name=".activity.HealthReportHistoryActivity"
             android:label="健康上报" />

@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.example.epidemic.liteorm.Account;
 import com.example.epidemic.liteorm.HealthReport;
+import com.example.epidemic.liteorm.PassCard;
 import com.litesuits.orm.LiteOrm;
 import com.litesuits.orm.db.assit.QueryBuilder;
 
@@ -69,6 +70,14 @@ public class LiteORMUtil {
         account1.setAccount(account);
         account1.setPassword(password);
         orm.save(account1);
+    }
+
+    /**
+     * 创建通行证
+     *
+     */
+    public void createPassCard(PassCard data) {
+        orm.save(data);
     }
 
     /**
