@@ -3,9 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -19,6 +23,7 @@
             style="@style/MyView"/>
 
         <TextView
+            android:id="@+id/status"
             android:textSize="25sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,6 +32,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/commit_date"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:textSize="20sp"
@@ -36,6 +42,7 @@
 
 
     <TextView
+        android:id="@+id/apply_name"
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"

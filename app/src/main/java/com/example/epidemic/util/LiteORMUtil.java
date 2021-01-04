@@ -113,4 +113,30 @@ public class LiteORMUtil {
         QueryBuilder<HealthReport> queryBuilder = new QueryBuilder<>(HealthReport.class);
         return orm.query(queryBuilder);
     }
+
+    /**
+     * 查询所有账号
+     *
+     * @return
+     */
+    public List<PassCard> queryPassCard() {
+        QueryBuilder<PassCard> queryBuilder = new QueryBuilder<>(PassCard.class);
+        return orm.query(queryBuilder);
+    }
+
+    /**
+     * 查询所有账号
+     *
+     * @return
+     */
+    public PassCard queryPassCard(String num) {
+        QueryBuilder<PassCard> queryBuilder = new QueryBuilder<>(PassCard.class);
+        List<PassCard> list= orm.query(queryBuilder);
+        for(int i=0;i<list.size();i++){
+            if(list.get(i).getNum().equals(num)){
+                return list.get(i);
+            }
+        }
+        return null;
+    }
 }

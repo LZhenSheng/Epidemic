@@ -14,6 +14,7 @@ import com.example.epidemic.activity.base.BaseTitleActivity;
 import com.example.epidemic.liteorm.PassCard;
 import com.example.epidemic.util.DateUtil;
 import com.example.epidemic.util.LiteORMUtil;
+import com.example.epidemic.util.ToastUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -69,7 +70,10 @@ public class AddApplyForPassActivity extends BaseTitleActivity {
                 passCard.setNum(student_num.getText().toString());
                 passCard.setStartDate(start_date_display.getText().toString().trim());
                 passCard.setEndDate(end_date_display.getText().toString().trim());
+                passCard.setStatus("已同意");
                 orm.createPassCard(passCard);
+                ToastUtil.successShortToast("提交成功");
+                finish();
                 break;
         }
     }
