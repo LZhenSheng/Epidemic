@@ -32,6 +32,11 @@ public class PreferenceUtil {
     private static final String NAME = "CHARITABLE";
 
     /**
+     * 偏好设置文件名称
+     */
+    private static final String TYPE = "TYPE";
+
+    /**
      * 是否显示引导界面标记
      */
     private static final String SHOW_GUIDE = "SHOW_GUIDE";
@@ -167,6 +172,22 @@ public class PreferenceUtil {
      */
     public static void setObjectId(String value) {
         putString(OBJECTID, value);
+    }
+
+    /**
+     * 是否显示引导界面
+     * @return
+     */
+    public static String getType() {
+        return getString(TYPE);
+    }
+
+    /**
+     * 设置是否显示引导界面
+     * @param value
+     */
+    public static void setType(String value) {
+        putString(TYPE, value);
     }
 
 }

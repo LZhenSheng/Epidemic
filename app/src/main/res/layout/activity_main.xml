@@ -19,6 +19,14 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/divider_small"/>
+
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
@@ -39,8 +47,8 @@
 
             <ImageView
                 android:id="@+id/indicator_iv1"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@mipmap/home_selected" />
 
             <View
@@ -49,8 +57,8 @@
 
             <ImageView
                 android:id="@+id/indicator_iv2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@mipmap/discovery" />
 
             <View
@@ -59,8 +67,8 @@
 
             <ImageView
                 android:id="@+id/indicator_iv3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@mipmap/healthy" />
 
             <View
@@ -69,8 +77,8 @@
 
             <ImageView
                 android:id="@+id/indicator_iv4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@mipmap/my" />
 
             <View style="@style/MyView" />

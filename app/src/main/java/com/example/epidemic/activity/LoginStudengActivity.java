@@ -55,6 +55,7 @@ public class LoginStudengActivity extends BaseTimeActivity {
                 break;
             case R.id.l_login:
                 PreferenceUtil.setObjectId("18237056873");
+                PreferenceUtil.setType("1");
 //                Account account=orm.queryAccountByIphonePassword(lAccount.getText().toString().trim(),lPassword.getText().toString().trim());
 //                if(account!=null){
 //                    PreferenceUtil.setSession(true);

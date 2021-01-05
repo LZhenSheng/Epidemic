@@ -39,11 +39,13 @@
 
                         <TextView
                             android:textStyle="bold"
+                            android:textSize="18sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="学号:1800300119"/>
 
                         <TextView
+                            android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -52,6 +54,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginBottom="5dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
@@ -65,7 +68,7 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="个人信息修改"
-                            android:textSize="15sp" />
+                            android:textSize="20sp" />
 
                         <View style="@style/MyView" />
 
@@ -76,7 +79,10 @@
 
                     </LinearLayout>
 
+                    <!--分割线-->
+
                     <LinearLayout
+                        android:layout_marginBottom="5dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
@@ -90,7 +96,7 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="通行证申请"
-                            android:textSize="15sp" />
+                            android:textSize="20sp" />
 
                         <View style="@style/MyView" />
 
@@ -101,7 +107,10 @@
 
                     </LinearLayout>
 
+                    <!--分割线-->
+
                     <LinearLayout
+                        android:layout_marginBottom="5dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
@@ -115,7 +124,36 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="健康上报记录"
-                            android:textSize="15sp" />
+                            android:textSize="20sp" />
+
+                        <View style="@style/MyView" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/toward_right" />
+
+                    </LinearLayout>
+
+                    <!--分割线-->
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/apply_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:text="申请二维码"
+                            android:textSize="20sp" />
 
                         <View style="@style/MyView" />
 
@@ -140,7 +178,7 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="问题反馈"
-                            android:textSize="15sp" />
+                            android:textSize="20sp" />
 
                         <View style="@style/MyView" />
 
@@ -178,8 +216,7 @@
                         android:background="@drawable/selector_color_primary"
                         android:foreground="?android:attr/selectableItemBackground"
                         android:text="退出登录"
-                        android:textColor="@drawable/selector_text_color_primary_reverse"
-                        android:textSize="20sp" />
+                        android:textColor="@drawable/selector_text_color_primary_reverse" />
 
                 </LinearLayout>
             </ScrollView>

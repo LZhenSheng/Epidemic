@@ -3,11 +3,13 @@ package com.example.epidemic.fragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,10 +51,10 @@ public class HealthFrgament extends BaseTitleFragment {
     @BindView(R.id.rv)
     RecyclerView rv;
 
-    @OnClick(R.id.addHealthReport)
-    public void onClick(){
-        startActivity(AddHealthReport.class);
-    }
+//    @OnClick(R.id.addHealthReport)
+//    public void onClick(){
+//        startActivity(AddHealthReport.class);
+//    }
 
     /**
      * 构造方法
@@ -80,8 +82,20 @@ public class HealthFrgament extends BaseTitleFragment {
     @Override
     protected void initData() {
         super.initData();
-        toolbar.setTitle("健康");
+        toolbar.setTitle("健康上报记录");
+        toolbar.inflateMenu(R.menu.menu_add);
         setTitleCenter(toolbar);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.action_add:
+                        startActivity(AddHealthReport.class);
+                        break;
+                }
+                return false;
+            }
+        });
     }
 
     @Override

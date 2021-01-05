@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 
@@ -24,6 +25,11 @@ import butterknife.OnClick;
 
 public class MeFragment extends BaseTitleFragment {
 
+    @BindView(R.id.apply_code)
+    LinearLayout apply_code;
+
+    @BindView(R.id.apply_pass_check)
+    LinearLayout apply_pass_check;
 
     @BindView(R.id.avator)
     ImageView avatar;
@@ -65,6 +71,11 @@ public class MeFragment extends BaseTitleFragment {
     @Override
     protected void initViews() {
         super.initViews();
+        if(PreferenceUtil.getType().equals("1")){
+            apply_code.setVisibility(View.GONE);
+        }else{
+            apply_pass_check.setVisibility(View.GONE);
+        }
         Glide.with(getMainActivity()).load("http://bmob-cdn-28709.bmobpay.com/2020/09/27/eebf2bf6d3aa4e29aafb5f521b33423a.jpg").into(avatar);
     }
 
@@ -75,7 +86,7 @@ public class MeFragment extends BaseTitleFragment {
         setTitleCenter(toolbar);
     }
 
-    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report})
+    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -93,6 +104,9 @@ public class MeFragment extends BaseTitleFragment {
                 break;
             case R.id.question_report:
                 startActivity(QuestionReportActivity.class);
+                break;
+            case R.id.apply_code:
+                startActivity(CodeActivity.class);
                 break;
         }
     }

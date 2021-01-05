@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.epidemic.R;
 import com.example.epidemic.activity.base.BaseTimeActivity;
+import com.example.epidemic.util.PreferenceUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -46,6 +47,7 @@ public class LoginTeacherActivity extends BaseTimeActivity {
                 startActivity(ForgetPasswordActivity.class);
                 break;
             case R.id.l_login:
+                PreferenceUtil.setType("2");
                 startActivityAfterFinishThis(MainActivity.class);
                 break;
             case R.id.iv_replace:

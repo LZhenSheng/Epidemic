@@ -174,11 +174,15 @@
 
                     <Button
                         android:id="@+id/commit"
-                        android:text="申请"
-                        style="@style/Button"
-                        android:textSize="20sp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:background="@drawable/selector_color_primary"
-                        android:textColor="@drawable/selector_text_color_primary_reverse"/>
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="申请"
+                        android:textColor="@drawable/selector_text_color_primary_reverse" />
 
                 </LinearLayout>
             </ScrollView>
