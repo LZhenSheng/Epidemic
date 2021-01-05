@@ -15,6 +15,7 @@ import com.example.epidemic.activity.ApplyForPassActivity;
 import com.example.epidemic.activity.CodeActivity;
 import com.example.epidemic.activity.HealthReportHistoryActivity;
 import com.example.epidemic.activity.LoginStudengActivity;
+import com.example.epidemic.activity.QuestionReportActivity;
 import com.example.epidemic.activity.UserMessageActivity;
 import com.example.epidemic.util.PreferenceUtil;
 
@@ -74,7 +75,7 @@ public class MeFragment extends BaseTitleFragment {
         setTitleCenter(toolbar);
     }
 
-    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check})
+    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -89,6 +90,9 @@ public class MeFragment extends BaseTitleFragment {
                 break;
             case R.id.apply_pass_check:
                 startActivity(ApplyForPassActivity.class);
+                break;
+            case R.id.question_report:
+                startActivity(QuestionReportActivity.class);
                 break;
         }
     }

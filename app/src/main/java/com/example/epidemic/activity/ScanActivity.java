@@ -2,6 +2,7 @@ package com.example.epidemic.activity;
 
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 
@@ -19,6 +20,8 @@ import butterknife.BindView;
 public class ScanActivity extends BaseTitleActivity implements OnCaptureCallback {
 
     private static final String TAG = "ScanActivity";
+
+    Handler handler=new Handler();
 
     /**
      * 扫描预览视图
@@ -147,5 +150,16 @@ public class ScanActivity extends BaseTitleActivity implements OnCaptureCallback
         //目的是防止持续扫描不正确的二维码
         //可以根据需求调整
         viewfinderView.postDelayed(() -> captureHelper.onResume(), 800);
+    }
+
+    @Override
+    protected void initListener() {
+        super.initListener();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivityAfterFinishThis(LoginStudengActivity.class);
+            }
+        }, 1000);
     }
 }

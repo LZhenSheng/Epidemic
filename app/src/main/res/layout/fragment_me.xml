@@ -38,13 +38,13 @@
                             android:layout_height="100dp"/>
 
                         <TextView
-                            android:textSize="15sp"
+                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="学号:1800300119"/>
 
                         <TextView
-                            android:textSize="15sp"
+                            android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="姓名:李振生"/>
@@ -65,7 +65,7 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="个人信息修改"
-                            android:textSize="20sp" />
+                            android:textSize="15sp" />
 
                         <View style="@style/MyView" />
 
@@ -90,7 +90,7 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="通行证申请"
-                            android:textSize="20sp" />
+                            android:textSize="15sp" />
 
                         <View style="@style/MyView" />
 
@@ -115,7 +115,32 @@
                             android:layout_height="wrap_content"
                             android:drawablePadding="5dp"
                             android:text="健康上报记录"
-                            android:textSize="20sp" />
+                            android:textSize="15sp" />
+
+                        <View style="@style/MyView" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/toward_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/question_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:text="问题反馈"
+                            android:textSize="15sp" />
 
                         <View style="@style/MyView" />
 

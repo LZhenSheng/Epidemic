@@ -98,10 +98,10 @@ public class HealthFrgament extends BaseTitleFragment {
         rv.setLayoutManager(layoutManager);
         rv.setNestedScrollingEnabled(false);
         //创建分割线
-        DividerItemDecoration decoration=new DividerItemDecoration(getMainActivity(),RecyclerView.VERTICAL);
+//        DividerItemDecoration decoration=new DividerItemDecoration(getMainActivity(),RecyclerView.VERTICAL);
         //添加到控件
         //可以添加多个
-        rv.addItemDecoration(decoration);
+//        rv.addItemDecoration(decoration);
 
         //禁用嵌套滚动
         rv.setNestedScrollingEnabled(false);
