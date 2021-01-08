@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!--圆角-->
+            <corners android:radius="8dp" />
+
+            <!--填充颜色-->
+            <solid android:color="@color/main_color" />
+            
+        </shape>
+    </item>
+</layer-list>

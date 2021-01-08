@@ -158,7 +158,7 @@ public class ScanActivity extends BaseTitleActivity implements OnCaptureCallback
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivityAfterFinishThis(LoginStudengActivity.class);
+                startActivityAfterFinishThis(ScanResultActivity.class);
             }
         }, 1000);
     }

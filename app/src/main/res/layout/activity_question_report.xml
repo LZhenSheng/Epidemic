@@ -81,15 +81,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="6"/>
-
-        <!--提交按钮-->
         <Button
             android:id="@+id/summit"
-            android:textSize="20sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/selector_color_primary"
-            android:textColor="@drawable/selector_text_color_primary_reverse"
-            style="@style/Button"
-            android:text="@string/summit"/>
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="提交"
+            android:textColor="@drawable/selector_text_color_primary_reverse" />
+
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

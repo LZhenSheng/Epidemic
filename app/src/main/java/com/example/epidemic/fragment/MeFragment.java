@@ -23,7 +23,7 @@ import com.example.epidemic.util.PreferenceUtil;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MeFragment extends BaseTitleFragment {
+public class MeFragment extends BaseCommonFragment {
 
     @BindView(R.id.apply_code)
     LinearLayout apply_code;
@@ -82,8 +82,6 @@ public class MeFragment extends BaseTitleFragment {
     @Override
     protected void initData() {
         super.initData();
-        toolbar.setTitle("我的");
-        setTitleCenter(toolbar);
     }
 
     @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})

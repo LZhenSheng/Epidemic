@@ -2,7 +2,12 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@drawable/shape_border"
     android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="3dp"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -43,11 +48,10 @@
             android:layout_height="20dp"
             android:textSize="10sp"
             android:text="健康"
+            android:textColor="@color/white"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/shape_border"/>
+            android:background="@drawable/shape_border_green"/>
 
     </LinearLayout>
-    <!--分割线-->
-    <include layout="@layout/divider_small" />
 
 </LinearLayout>

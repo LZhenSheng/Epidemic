@@ -1,228 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!--Toolbar-->
-    <include layout="@layout/tool_bar" />
 
-    <!--:用内容部分layout_behavior来控制内容区域-->
-    <LinearLayout style="@style/ToolbarContent">
-
-        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
-            android:id="@+id/activity_main"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ScrollView
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingBottom="30dp"
+                android:background="@color/main_color"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="100dp"
+                    android:id="@+id/avator"
+                    android:layout_height="100dp"/>
 
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_width="100dp"
-                            android:id="@+id/avator"
-                            android:layout_height="100dp"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号:1800300119"/>
 
-                        <TextView
-                            android:textStyle="bold"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="学号:1800300119"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名:李振生"/>
 
-                        <TextView
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="姓名:李振生"/>
+            </LinearLayout>
 
-                    </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/user_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
-                    <LinearLayout
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/user_message"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="个人信息修改"
+                    android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="5dp"
-                            android:text="个人信息修改"
-                            android:textSize="20sp" />
+                <View style="@style/MyView" />
 
-                        <View style="@style/MyView" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/toward_right" />
-
-                    </LinearLayout>
-
-                    <!--分割线-->
-
-                    <LinearLayout
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/apply_pass_check"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="5dp"
-                            android:text="通行证申请"
-                            android:textSize="20sp" />
-
-                        <View style="@style/MyView" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/toward_right" />
-
-                    </LinearLayout>
-
-                    <!--分割线-->
-
-                    <LinearLayout
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/health_report"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="5dp"
-                            android:text="健康上报记录"
-                            android:textSize="20sp" />
-
-                        <View style="@style/MyView" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/toward_right" />
-
-                    </LinearLayout>
-
-                    <!--分割线-->
+            </LinearLayout>
 
 
-                    <LinearLayout
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/apply_code"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/binding_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="5dp"
-                            android:text="申请二维码"
-                            android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="信息绑定"
+                    android:textSize="20sp" />
 
-                        <View style="@style/MyView" />
+                <View style="@style/MyView" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/toward_right" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
 
-                    </LinearLayout>
+            </LinearLayout>
 
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:id="@+id/question_report"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp">
+            <!--分割线-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="5dp"
-                            android:text="问题反馈"
-                            android:textSize="20sp" />
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/apply_pass_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
-                        <View style="@style/MyView" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="通行证申请"
+                    android:textSize="20sp" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/toward_right" />
+                <View style="@style/MyView" />
 
-                    </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
 
-<!--                    <LinearLayout-->
-<!--                        android:id="@+id/generate_codeing"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="5dp">-->
+            </LinearLayout>
 
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:drawablePadding="5dp"-->
-<!--                            android:text="检查更新"-->
-<!--                            android:textSize="20sp" />-->
+            <!--分割线-->
 
-<!--                        <View style="@style/MyView" />-->
-<!--                    </LinearLayout>-->
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/health_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
-                    <Button
-                        android:id="@+id/exit"
-                        style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/selector_color_primary"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:text="退出登录"
-                        android:textColor="@drawable/selector_text_color_primary_reverse" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="健康上报记录"
+                    android:textSize="20sp" />
 
-                </LinearLayout>
-            </ScrollView>
+                <View style="@style/MyView" />
 
-        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <!--分割线-->
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/returning_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="返校申请"
+                    android:textSize="20sp" />
+
+                <View style="@style/MyView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/apply_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="请假申请"
+                    android:textSize="20sp" />
+
+                <View style="@style/MyView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/apply_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="申请二维码"
+                    android:textSize="20sp" />
+
+                <View style="@style/MyView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/question_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="问题反馈"
+                    android:textSize="20sp" />
+
+                <View style="@style/MyView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
+
+            </LinearLayout>
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/generate_codeing"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="5dp">-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:drawablePadding="5dp"-->
+            <!--                            android:text="检查更新"-->
+            <!--                            android:textSize="20sp" />-->
+
+            <!--                        <View style="@style/MyView" />-->
+            <!--                    </LinearLayout>-->
+
+            <Button
+                android:id="@+id/exit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_color_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="退出登录"
+                android:textColor="@drawable/selector_text_color_primary_reverse" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
