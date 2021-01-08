@@ -5,12 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.epidemic.R;
+import com.example.epidemic.activity.base.BaseTitleActivity;
 
-public class ApplicationForReturningToSchoolActivity extends AppCompatActivity {
+import butterknife.OnClick;
+
+public class ApplicationForReturningToSchoolActivity extends BaseTitleActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_for_returning_to_school);
+    }
+
+    @OnClick(R.id.save)
+    public void onClick(){
+        finish();
     }
 }
