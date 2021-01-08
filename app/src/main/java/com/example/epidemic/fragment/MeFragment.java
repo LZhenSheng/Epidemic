@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.Glide;
 import com.example.epidemic.R;
 import com.example.epidemic.activity.ApplyForPassActivity;
+import com.example.epidemic.activity.BindingInformationActivity;
 import com.example.epidemic.activity.CodeActivity;
 import com.example.epidemic.activity.HealthReportHistoryActivity;
 import com.example.epidemic.activity.LoginStudengActivity;
@@ -84,7 +85,7 @@ public class MeFragment extends BaseCommonFragment {
         super.initData();
     }
 
-    @OnClick({R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})
+    @OnClick({R.id.binding_information,R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -105,6 +106,9 @@ public class MeFragment extends BaseCommonFragment {
                 break;
             case R.id.apply_code:
                 startActivity(CodeActivity.class);
+                break;
+            case R.id.binding_information:
+                startActivity(BindingInformationActivity.class);
                 break;
         }
     }
