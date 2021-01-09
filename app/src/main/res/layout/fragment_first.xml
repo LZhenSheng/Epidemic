@@ -24,11 +24,416 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:background="@drawable/bg_logo"
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_border_message"
                         android:layout_width="match_parent"
-                        android:scaleType="centerCrop"
-                        android:layout_height="183dp"/>
+                        android:layout_height="150dp">
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                style="@style/MyView"/>
+
+                            <TextView
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="李振生"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="学生"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray"/>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="学号:1800300119"/>
+
+                            <View
+                                style="@style/MyView"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <View
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="1dp"
+                            android:layout_height="100dp"
+                            android:background="@color/white"/>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/qrcode"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="身份码"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:id="@+id/scan"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/scan"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="扫一扫"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp">
+
+                            <View
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/shape_border_background"
+                                android:layout_width="5dp"
+                                android:layout_height="20dp"/>
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="轻松校园"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:id="@+id/add_health_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:background="@drawable/shape_border_selector"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp">
+
+                                <ImageView
+                                    android:background="@drawable/medical_box"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="健康上报"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:id="@+id/apply_leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:background="@drawable/shape_border_selector"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp">
+
+                                <ImageView
+                                    android:background="@drawable/leave"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="请假申请"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:id="@+id/returning_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:background="@drawable/shape_border_selector"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp">
+
+                                <ImageView
+                                    android:background="@drawable/return_to_school"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="返校申请"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                        <LinearLayout
+                            android:id="@+id/apply_pass_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:background="@drawable/shape_border_selector"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp">
+
+                                <ImageView
+                                    android:background="@drawable/pass_back"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="办通行证"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:background="@drawable/shape_border_selector"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp">
+
+                                <ImageView
+                                    android:background="@drawable/footprint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="足迹记录"/>
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/MyView"/>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp">
+
+                            <View
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/shape_border_background"
+                                android:layout_width="5dp"
+                                android:layout_height="20dp"/>
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="通知公告"/>
+
+                            <View
+                                style="@style/MyView"/>
+
+                            <TextView
+                                android:layout_marginRight="5dp"
+                                android:textSize="20sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="More"/>
+
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_chevron_right_black_24dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp">
+
+                            <View
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/shape_border_background"
+                                android:layout_width="5dp"
+                                android:layout_height="20dp"/>
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="新闻资讯"/>
+
+                            <View
+                                style="@style/MyView"/>
+
+                            <TextView
+                                android:layout_marginRight="5dp"
+                                android:textSize="20sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="More"/>
+
+                            <ImageView
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_chevron_right_black_24dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" />
+
                 </LinearLayout>
             </ScrollView>
 

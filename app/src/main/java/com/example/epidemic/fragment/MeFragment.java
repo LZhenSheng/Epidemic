@@ -12,10 +12,13 @@ import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
 import com.example.epidemic.R;
+import com.example.epidemic.activity.ApplicationForReturningToSchoolActivity;
 import com.example.epidemic.activity.ApplyForPassActivity;
 import com.example.epidemic.activity.BindingInformationActivity;
 import com.example.epidemic.activity.CodeActivity;
+import com.example.epidemic.activity.FootprintActivity;
 import com.example.epidemic.activity.HealthReportHistoryActivity;
+import com.example.epidemic.activity.LeaveApplicationActivity;
 import com.example.epidemic.activity.LoginStudengActivity;
 import com.example.epidemic.activity.QuestionReportActivity;
 import com.example.epidemic.activity.UserMessageActivity;
@@ -85,7 +88,7 @@ public class MeFragment extends BaseCommonFragment {
         super.initData();
     }
 
-    @OnClick({R.id.binding_information,R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})
+    @OnClick({R.id.footprint,R.id.apply_leave,R.id.returning_school,R.id.binding_information,R.id.exit,R.id.user_message,R.id.health_report,R.id.apply_pass_check,R.id.question_report,R.id.apply_code})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.exit:
@@ -109,6 +112,15 @@ public class MeFragment extends BaseCommonFragment {
                 break;
             case R.id.binding_information:
                 startActivity(BindingInformationActivity.class);
+                break;
+            case R.id.returning_school:
+                startActivity(ApplicationForReturningToSchoolActivity.class);
+                break;
+            case R.id.apply_leave:
+                startActivity(LeaveApplicationActivity.class);
+                break;
+            case R.id.footprint:
+                startActivity(FootprintActivity.class);
                 break;
         }
     }

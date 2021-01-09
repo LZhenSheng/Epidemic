@@ -157,6 +157,32 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/footprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="我的足迹"
+                    android:textSize="20sp" />
+
+                <View style="@style/MyView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/toward_right" />
+
+            </LinearLayout>
+
             <!--分割线-->
 
             <LinearLayout

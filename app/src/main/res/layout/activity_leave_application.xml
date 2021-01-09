@@ -42,7 +42,7 @@
                         <!--标题-->
                         <TextView
                             android:textColor="@color/text"
-                            android:text="申请说明"
+                            android:text="请假理由"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content" />
@@ -74,7 +74,7 @@
                         <!--标题-->
                         <TextView
                             android:textColor="@color/text"
-                            android:text="返校时间"
+                            android:text="离校时间"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content" />
@@ -101,7 +101,7 @@
                         <!--标题-->
                         <TextView
                             android:textColor="@color/text"
-                            android:text="返校方式"
+                            android:text="返校时间"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content" />

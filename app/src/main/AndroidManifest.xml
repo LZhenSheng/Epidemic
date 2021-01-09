@@ -28,9 +28,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.ApplicationForReturningToSchoolActivity"
-            android:label="返校申请"></activity>
-        <activity android:name=".activity.LeaveApplicationActivity" />
+        <activity android:name=".activity.FootprintActivity"></activity>
+        <activity
+            android:name=".activity.ApplicationForReturningToSchoolActivity"
+            android:label="返校申请" />
+        <activity
+            android:name=".activity.LeaveApplicationActivity"
+            android:label="请假申请" />
         <activity
             android:name=".activity.BindingInformationActivity"
             android:label="身份绑定" />
