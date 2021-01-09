@@ -47,14 +47,14 @@ public class BitmapUtil {
                 for (int x = 0; x < QR_WIDTH; x++) {
                     if (bitMatrix.get(x, y)) {
                         if (x < QR_WIDTH / 2 && y < QR_HEIGHT / 2) {
-                            pixels[y * QR_WIDTH + x] = 0x00ff0000;// 蓝色
+                            pixels[y * QR_WIDTH + x] = 0xFF5ACF00;// 蓝色
                             Integer.toHexString(new Random().nextInt());
                         } else if (x < QR_WIDTH / 2 && y > QR_HEIGHT / 2) {
-                            pixels[y * QR_WIDTH + x] = 0x00ff0000;// 红色
+                            pixels[y * QR_WIDTH + x] = 0xFF5ACF00;// 红色
                         } else if (x > QR_WIDTH / 2 && y > QR_HEIGHT / 2) {
-                            pixels[y * QR_WIDTH + x] = 0x00ff0000;// 绿色
+                            pixels[y * QR_WIDTH + x] = 0xFF5ACF00;// 绿色
                         } else {
-                            pixels[y * QR_WIDTH + x] = 0x00ff0000;// 黑色
+                            pixels[y * QR_WIDTH + x] = 0xFF5ACF00;// 黑色
                         }
                     } else {
                         pixels[y * QR_WIDTH + x] = 0xffffffff;// 白色
