@@ -13,6 +13,7 @@ import com.example.epidemic.R;
 import com.example.epidemic.activity.AddHealthReport;
 import com.example.epidemic.activity.ApplicationForReturningToSchoolActivity;
 import com.example.epidemic.activity.ApplyForPassActivity;
+import com.example.epidemic.activity.IdCodeActivity;
 import com.example.epidemic.activity.LeaveApplicationActivity;
 import com.example.epidemic.activity.ScanActivity;
 import com.example.epidemic.adapter.MessageAdapter;
@@ -103,7 +104,7 @@ public class FirstFrgament extends BaseTitleFragment {
         }
     }
 
-    @OnClick({R.id.scan, R.id.add_health_report, R.id.apply_leave, R.id.returning_school, R.id.apply_pass_check})
+    @OnClick({R.id.id_code,R.id.scan, R.id.add_health_report, R.id.apply_leave, R.id.returning_school, R.id.apply_pass_check})
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.scan:
@@ -120,6 +121,9 @@ public class FirstFrgament extends BaseTitleFragment {
                 break;
             case R.id.apply_pass_check:
                 startActivity(ApplyForPassActivity.class);
+                break;
+            case R.id.id_code:
+                startActivity(IdCodeActivity.class);
                 break;
         }
     }

@@ -87,6 +87,7 @@
                             style="@style/MyView"/>
 
                         <LinearLayout
+                            android:id="@+id/id_code"
                             android:layout_gravity="center_vertical"
                             android:orientation="vertical"
                             android:layout_width="wrap_content"
