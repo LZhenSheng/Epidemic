@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.FootprintActivity">
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Toolbar-->
+    <include layout="@layout/tool_bar" />
+
+    <!--内容部分layout_behavior:用来控制内容区域-->
+    <LinearLayout style="@style/ToolbarContent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:background="@drawable/shape_border_left_selected"
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="36dp">
+
+                <TextView
+                    android:id="@+id/left_text"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="校外"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:background="@drawable/shape_border_right_select"
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="36dp">
+
+                <TextView
+                    android:id="@+id/right_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="校内"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="30dp"
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

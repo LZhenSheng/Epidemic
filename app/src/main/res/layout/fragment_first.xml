@@ -304,6 +304,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
+                            android:id="@+id/footprint"
                             android:layout_marginLeft="40dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

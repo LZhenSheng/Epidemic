@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_small"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A检查点"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_green_2"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:text="允许通行"/>
+
+                <View
+                    style="@style/MyView"/>
+
+                <TextView
+                    android:text="2020-02-01 12:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入场"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.epidemic.R;
 import com.example.epidemic.activity.base.BaseTitleActivity;
 import com.example.epidemic.util.DensityUtil;
@@ -15,6 +16,9 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 public class CodeActivity extends BaseTitleActivity {
+
+    @BindView(R.id.avatar)
+    ImageView avatar;
 
     /**
      * 二维码
@@ -48,5 +52,7 @@ public class CodeActivity extends BaseTitleActivity {
         Bitmap bitmap = CodeUtils.createQRCode("data" , DensityUtil.dip2px(getMainActivity(), 300));
         //显示二维码
         iv_code.setImageBitmap(bitmap);
+        Glide.with(getMainActivity()).load("http://bmob-cdn-28709.bmobpay.com/2020/09/27/eebf2bf6d3aa4e29aafb5f521b33423a.jpg").into(avatar);
+
     }
 }

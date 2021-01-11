@@ -46,6 +46,14 @@
                         android:layout_height="wrap_content"
                         android:text="姓名:李振生"/>
 
+                    <TextView
+                        android:textColor="#FF5ACF00"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="允许通行"/>
+
                     <!--二维码-->
                     <ImageView
                         android:id="@+id/iv_code"
